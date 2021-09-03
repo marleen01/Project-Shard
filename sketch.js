@@ -38,12 +38,12 @@ function getPoly(n) {
 }
 
 function spawnPoly() {
-  if (polyCount > 851) {
+  if (polyCount > 500) {
     for (var p = 0; p < 5; p++) {
       shards.push(new Shard(polys[p][6], polys[p][0], polys[p][1],
       polys[p][2], polys[p][3], polys[p][4], polys[p][5]));
       polys.shift();
     }
-  }else {noLoop();}
+  }
   polyCount -= 5;
 }
